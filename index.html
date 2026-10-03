@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Алая нить — яндере-новелла</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Neucha&family=Marck+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="stage">
+  <div id="scene">
+    <div id="bg" class="layer"></div>
+    <div id="tint" class="layer day"></div>
+    <div id="sprites" class="layer"></div>
+    <canvas id="parts" class="layer" width="1280" height="720"></canvas>
+    <div id="vignette" class="layer"></div>
+  </div>
+
+  <div id="hud" hidden>
+    <div id="daylabel"></div>
+    <div id="stats">
+      <div class="bar love"><div class="lbl"><span>❤ Семпай</span><span class="v">0</span></div><div class="track"><div class="fill"></div></div></div>
+      <div class="bar rival"><div class="lbl"><span>✿ Юкина</span><span class="v">0</span></div><div class="track"><div class="fill"></div></div></div>
+      <div class="bar sanity"><div class="lbl"><span>✦ Рассудок</span><span class="v">0</span></div><div class="track"><div class="fill"></div></div></div>
+      <div class="bar sus"><div class="lbl"><span>👁 Подозрение</span><span class="v">0</span></div><div class="track"><div class="fill"></div></div></div>
+    </div>
+  </div>
+
+  <div id="dialog" hidden>
+    <div id="portrait" hidden></div>
+    <div id="namebox" hidden></div>
+    <div id="text"></div>
+    <div id="next" hidden>▼</div>
+  </div>
+  <div id="toolbar" hidden>
+    <button data-a="log">Журнал</button>
+    <button data-a="auto">Авто</button>
+    <button data-a="skip">Пропуск</button>
+    <button data-a="menu">Меню</button>
+  </div>
+
+  <div id="whispers"></div>
+  <div id="choices" class="overlay" hidden></div>
+  <div id="map" class="overlay" hidden></div>
+  <div id="minigame" class="overlay" hidden></div>
+  <div id="toasts"></div>
+  <div id="flash" class="layer"></div>
+  <div id="card" class="overlay" hidden></div>
+  <div id="ending" class="overlay" hidden></div>
+  <div id="title" class="overlay" hidden></div>
+  <div id="menu" class="overlay panelwrap" hidden></div>
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/art.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/story.js"></script>
+</body>
+</html>
